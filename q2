@@ -1,0 +1,36 @@
+//2.Convert all the strings to title caps in a string array
+let stringArray = ["tamil", "is", "my", "language"]
+
+let resultStringArray = (function (stringArray) {
+
+    return (stringArray.map((item) => {
+
+        return item.toUpperCase()
+
+    }))
+})(stringArray);
+
+console.log("All upper case string in an array: " + resultStringArray)
+
+output:
+All upper case string in an array: TAMIL,IS,MY,LANGUAGE
+
+//4.Return all the prime numbers in an array
+
+let arrayNumber1 = [2, 5, 12, 17, 22, 25, 27, 29, 33, 36, 37, 43, 49, 52, 59, 77]
+
+let resultPrimeArray = (function (arrayNumber1) {
+
+    return (arrayNumber1.filter((item) => {
+
+        for (i = 2; i < item; i++) {
+            if (item % i === 0)
+                return false
+        }
+
+        return true
+
+    }))
+})(arrayNumber1);
+
+console.log("Prime numbers in an array: " + resultPrimeArray)
